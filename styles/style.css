@@ -1,0 +1,61 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+/* naar een idee van Jen Simmons */
+/* @font-face {
+  font-family: "HerculanumRoman";
+  src: 
+} */
+
+@font-face {
+  font-family: "HerculanumRoman";
+  src:url("../fonts/HerculanumRoman.ttf") format("truetype");
+}
+
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+body {
+  margin:0;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+img {
+  max-width:100%;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings:black
+  /* ... */
+}
+
+
+
+
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1 {
+  color:var(--color-headings);
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* ... */
+
+
