@@ -1,0 +1,189 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+/* naar een idee van Jen Simmons */
+/* @font-face {
+  font-family: "HerculanumRoman";
+  src: 
+} */
+
+
+
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("../fonts/KaushanScript-Regular.woff2") format("woff2");
+}
+
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+/* button:not([disabled]) {
+  cursor:pointer;
+} */
+
+/* body {
+  cursor: url('../images/naamafbeelding.png') 32 23, auto;
+} */
+
+
+body {
+  cursor: url('../images/appavliegen-min.gif') 40 40 , auto;
+}
+
+body {
+  background-image: url(/images/avatarkaart.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+/* plaatje geluidicon */
+img:nth-of-type(1){
+  position:absolute;
+  left: 2%;
+  width: 5%;
+  top: 5%;
+}
+
+/* aarde, lucht, vuur natie*/
+section img:nth-of-type(2), section img:nth-of-type(3), section img:nth-of-type(4) { 
+  width: 4em;
+}
+
+/* water natie */
+section img:nth-of-type(1) { 
+  width: 4em;
+}
+
+
+section img:nth-of-type(1) {
+  position: absolute;
+left: 50%;
+  top:10%;
+
+}
+/* posities van de plaatjes aardrijk  */
+img:nth-of-type(2) {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+
+}
+/* posities van de plaatjes luchtrijk  */
+img:nth-of-type(3) {
+  position: absolute;
+  right: 75%;
+  top:40%;
+
+}
+/* posities van de plaatjes vuurnatie */
+img:nth-of-type(4) {
+  position: absolute;
+  right: 75%;
+  top:70%;
+
+}
+
+/* gifje annimatie */
+/* img:nth-of-type(5){
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  width: 20%;
+}
+
+img:nth-of-type(5)::before {
+  animation:Aang 2s ease ;
+}
+
+@keyframes Aang {
+  0% { 
+    transform: scale(1); 
+  }
+  25% { 
+    transform: scale(.95); 
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  }  */
+
+
+
+
+
+
+img:nth-of-type(3) {
+  backface-visibility: visible;
+	animation: img 2.3s ease 2;
+}
+
+section img:nth-of-type(1):hover, img:nth-of-type(2):hover, img:nth-of-type(3):hover, img:nth-of-type(4):hover{
+	backface-visibility: visible;
+	animation: img 2.3s ease infinite;
+}
+
+
+@keyframes img {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings:black;
+  --achtergrondkleur:radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(185,187,196,1) 100%);
+  --bordercolors:black;
+  --boxshadow:grey;
+
+
+  /* ... */
+}
+/* Styling for the dialogs */
+dialog{
+width: 40em;
+border-radius: 3em;
+border-width: 0.2em;
+background: var(--achtergrondkleur);
+border-color: var(--bordercolors);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+  font-family: "KaushanScript-Regular";
+}
+
+
+
+
+
+
